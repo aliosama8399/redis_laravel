@@ -17,6 +17,7 @@ class CreateCustomersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
+            $table->unsignedInteger('national_id')->unique();
             $table->date('subscription_end_date');
             $table->timestamps();
         });

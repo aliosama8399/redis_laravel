@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('customer', [App\Http\Controllers\CustomerController::class, 'checkCustomer']);
+Route::post('customer1', [App\Http\Controllers\CustomerController::class, 'checkCustomerCache']);
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
